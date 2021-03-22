@@ -91,7 +91,7 @@ const Main = ({ domain = '' }: MainProps) => {
             <Box display="flex" flexDirection="column" className={classes.info}>
               <div className={classes.subtitle}>Creative intelligence&trade;</div>
               <div>
-                <div className={classes.link}>info@{domain}</div>
+                <div className={classes.link}>info@{domain.replace(':', '')}</div>
                 <div className={classes.link}>
                   <Link url={`https://github.com/${name}`} label={`github.com/${name}`} />
                 </div>
