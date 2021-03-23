@@ -52,6 +52,12 @@ const useStyles = makeStyles(() => ({
     marginTop: 24,
     marginBottom: 24
   },
+  blurb: {
+    paddingLeft: 8,
+    fontSize: 20,
+    marginTop: 8,
+    marginBottom: 24
+  },
   link: {
     marginTop: 6,
     paddingLeft: 8,
@@ -90,6 +96,9 @@ const Main = ({ domain = '' }: MainProps) => {
             </Box>
             <Box display="flex" flexDirection="column" className={classes.info}>
               <div className={classes.subtitle}>Creative intelligence&trade;</div>
+              <div className={classes.blurb}>
+                {name.toUpperCase()} develops products and services to help your team collaborate and <br/>share information more securely and effectively.
+              </div>
               <div>
                 <div className={classes.link}>info@{domain.replace(':', '')}</div>
                 <div className={classes.link}>
